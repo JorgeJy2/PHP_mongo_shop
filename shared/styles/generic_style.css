@@ -89,7 +89,6 @@
     
     table {
         margin: auto;
-        border: #160902 5px solid;
     }
     
     body {
@@ -117,8 +116,6 @@
     th,
     td {
         padding: 15px;
-        
-        
         color: #160902;
     }
     
@@ -129,12 +126,12 @@
     
     th {
         text-align: center;
-        color:#FFF;
+        color: #FFF;
         background-color: #160902;
     }
     
     tr:hover {
-        background-color: rgba(179, 134, 123, 0.3);
+        background-color: #CEE6FD;
     }
     
     footer {
@@ -253,6 +250,6 @@
         align-content: center;
         margin-right: 500px;
         margin-left: 499px;
-        background: linear-gradient(85deg, #89493A, #160902);
+        background: linear-gradient(100deg, rgb(178, 193, 207), #0BC4F2);
         margin-top: 2%;
     }

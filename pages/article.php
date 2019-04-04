@@ -1,5 +1,4 @@
 <?php include('../conexionmongodb.php'); ?>
-<?php include('../bisnes_logic/conexion.php'); ?>
 <?php include('../bisnes_logic/code_article.php'); ?>
 <?php
 $seleccionar=false;
@@ -122,6 +121,8 @@ function filter(__val__){
     <div class="wrapper">
     <section>
     <h2 class="tittle_page_page"> Artículo</h2><br>
+    <img src="../shared/images/icons/pe.png" width="200px">
+    <br>
     <?php
 
             $colección = $cliente->store->articulo;
@@ -202,7 +203,7 @@ function filter(__val__){
         <div class="container-body">
             <div class="colum1">
                 <h1>Información de la página</h1>
-                <p>La primer funcionalidad de la pagina es mostrar los articulos de moda en venta</p>
+                <p>La primer funcionalidad de la página es mostrar los artículos de moda en venta.</p>
             </div>
             <div class="colum2">
                 <h1>Desarrolladores</h1>
