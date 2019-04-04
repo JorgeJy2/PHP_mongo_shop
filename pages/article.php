@@ -151,15 +151,15 @@ function filter(__val__){
     <form method="post" action="article.php">
         <input  type="hidden" name="idar" value="<?php echo $idar; ?>"><br>
         <label>Nombre de artículo:</label><br>
-        <input type="text" onkeypress="return soloLetras(event)" required id="articulo" name="articulo" value="<?php echo $articulo; ?>"
+        <input type="text" maxlength="50" onkeypress="return soloLetras(event)" required id="articulo" name="articulo" value="<?php echo $articulo; ?>"
         placeholder="Nombre de un artículo"><br>
         <label>Precio: </label><br>
-        <input type="text" name="precio" onkeypress="return filterFloat(event,this);" value="<?php echo $precio; ?>" required 
+        <input type="text" maxlength="20" name="precio" onkeypress="return filterFloat(event,this);" value="<?php echo $precio; ?>" required 
         placeholder="Ejemplo: 10.50"><br>
         <label>Existencia: </label><br>
-        <input type="number" name="existencia" min="1" value="<?php echo $existencia; ?>" required ><br>
+        <input type="text" maxlength="20" max="999999999" name="existencia"  onkeypress="return soloNumeros(event)"  min="1" value="<?php echo $existencia; ?>" required ><br>
         <label>Descripción: </label><br>
-        <input type="text" name="descripcion" onkeypress="return soloLetras(event)" value="<?php echo $descripcion; ?>" required
+        <input type="text" maxlength="60" name="descripcion" onkeypress="return soloLetras(event)" value="<?php echo $descripcion; ?>" required
         placeholder="Ingresa una descripción"><br>
         <label>Selecciona una categoría: </label><br>
         <?php if($seleccionar == true): ?>

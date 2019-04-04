@@ -88,7 +88,7 @@ if(isset($_GET['sele'])){
 <form method="post" action="">
 <input  type="hidden" name="id" value="<?php echo $id; ?>"><br>
 		<label>Categoría:</label>
-		<input type="text" value="<?php echo $name; ?>"  required onkeypress="return soloLetras(event)" name="categoria" placeholder="Nombre"/><br/> 
+		<input type="text" maxlength="50" value="<?php echo $name; ?>"  required onkeypress="return soloLetras(event)" name="categoria" placeholder="Nombre"/><br/> 
         <?php if($seleccionar == true): ?>
         <button class="btn btn_update" type="submit" name="update">Actualizar <i class="fas fa-pen"></i></button>&nbsp;&nbsp;
         <button class="btn btn_delete" type="submit" name="eliminar">Eliminar <i class="fas fa-trash"></i></button><br><br>
